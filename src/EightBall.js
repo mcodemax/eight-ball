@@ -8,7 +8,7 @@ const EightBall = ({answers}) => {
     
     function clickPredict() {
         const currPrediction = answers[Math.floor(Math.random() * answers.length)];
-        //when current prediction is moved outside of this f() scope the app breaks
+        //when currPrediction is moved outside of this f() scope the app breaks
         //see abv> app breaks; see console.log; happens when msg and color are repeated.
 
         setColor(currPrediction.color);
